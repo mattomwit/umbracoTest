@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Web.PublishedContentModels
+@{
+	Layout = "MasterTemplate.cshtml";
+}
+
+            <div class="con">
+                <div class="box">
+                    <div class="box-top">@Umbraco.Field("buttonOfContent2")</div>
+                        <div class="box-bot clearfix">
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/iAHUq1c6G7o" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </div>
+                <div class="box">
+                    <div class="box-top">@Umbraco.Field("buttonOfContent2")</div>
+                    <div class="box-bot">@Umbraco.Field("bodyText2")</div>
+                </div>
+                 <div class="box">
+                    <div class="box-top">@Umbraco.Field("buttonOfContent2")</div>
+                    <div class="box-bot"> 
+                        <img src="">
+                    </div>
+                </div>
+            </div>
+          <div class="content_bodyText">
+            @Model.Content.BodyText
+        </div>

@@ -1,0 +1,52 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+}
+
+@* the fun starts here *@
+
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>BeoGamesTV</title>
+        <link rel="stylesheet" href="@Url.Content("~/css/stylesheet.css")" />
+        <link rel="stylesheet" href="@Url.Content("~/css/stylesheetmain.css")" />
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="logo">
+                <a href="pages/main.html" target="ifrcontent">
+                    <span id="beo">Beo</span><span id="games">Games</span><span id="tv">TV</span>
+                </a>
+            </div>
+        </div>
+        @{
+	    var selection = Model.Content.Site().Children()
+						.Where(x => x.IsVisible());
+        }
+        <nav class="sidebar" id="sidebar">
+            <ul id="nav">
+                <li><a href="pages/main.html" target="ifrcontent">Home</a></li>
+                <li><a href="https://www.youtube.com/user/BeoGamesTV">Youtube</a></li>
+                <li><a href="pages/main3.html" target="ifrcontent">Gallery</a></li>
+                <li><a href="https://www.facebook.com/pages/BeoGames/576462555807248?ref=hl">Facebook</a></li>
+                <li><a href="pages/main2.html" target="ifrcontent">About Me</a></li>
+            	@foreach(var item in selection){
+            		<li>
+            			<a href="@item.Url">@item.Name</a>
+            		</li>
+            	}
+            </ul>
+            <a href="#" class="nav-toggle"></a>
+        </nav>
+        
+        <div class="content">
+            @RenderBody()
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="@Url.Content("~/scripts/main.js")"></script>
+    </body>
+</html>

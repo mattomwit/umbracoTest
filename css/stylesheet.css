@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Chewy|Gloria+Hallelujah|Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   /* background-color: #0B7BE7;*/
+    font-family: 'Open Sans',  sans-serif;
+}
+
+div#header{
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255,216,0,1);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    float:left;
+    margin-top:0px;
+    margin-left:25px;
+}
+
+.logo a{
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.logo span{
+    font-weight: 200;
+}
+#nav-menu{
+    width: 100%;
+    margin:0 auto;
+
+}
+
+.sidebar {
+    position:fixed;
+    left:0;
+    top:0;
+    box-sizing: border-box;
+    margin-top:50px;
+    width: 250px;
+    height: 100%;
+    background-color: #333333;
+    margin-left: -250px;
+    opacity:.5;
+    transition: opacity 1s ease-in-out, margin 1s ease-in-out;
+    
+    
+}
+
+.sidebar.nav-open{
+    margin-left:0;
+    opacity:1;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.75);
+    
+}
+
+
+.nav-toggle {
+    position: absolute;
+    right: -40px;
+    top:0;
+    width:40px;
+    height:40px;
+    background-color: #333333;
+    line-height:40px;
+    text-decoration:none;
+    border-bottom-right-radius: 3px;
+    box-shadow: 1px 0 3px rgba(0,0,0,0.75);
+}
+
+.nav-toggle:before {
+    content: "\2192";
+}
+
+.sidebar.nav-open .nav-toggle {
+    content: "\2190";
+}
+
+.content{
+/*    margin-left: 250px; */
+    margin-left:auto;
+    margin-right: auto;
+    padding:0x;
+    width: 100%
+    height: 100%;
+
+}
+
+#ifrcontent {
+    padding-top: 50px;
+    border:none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+ul#nav{
+
+}
+
+ul#nav li{
+    list-style: none;
+}
+
+ul#nav li a{
+    color: #ccc;
+    display: block;
+    padding: 5px;
+    padding-left: 25px;
+    font-family: 'Gloria Hallelujah','Open Sans',  sans-serif;
+    box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.75);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2;
+}
+
+ul#nav li a:hover{
+    padding-left:45px;
+    font-size: 1.3em;
+    background-color: black ;
+    color: white ;  
+}
+
+ul#nav li a:selected{
+    background-color: darkgray;
+    color: black ;  
+}
+
+#beo, #TV,#games{
+text-shadow: 2px 2px grey;
+}
+
+#beo, #TV{
+    color: black;
+    font-family: 'Open Sans',  sans-serif;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+#games{
+    font-family:'Gloria Hallelujah','Open Sans',  sans-serif;
+    font-style: italic;
+    font-size: .8em;
+}

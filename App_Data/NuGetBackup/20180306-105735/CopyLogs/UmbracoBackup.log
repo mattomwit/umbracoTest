@@ -1,0 +1,27 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Rozszerzenie Robust File Copy dla systemu Windows                              
+-------------------------------------------------------------------------------
+
+        Uruchomiono : Tue Mar 06 10:57:35 2018
+
+   Katalog «r¢dˆowy : D:\mat\programowanie\Projekty Internet\Umbraco1\Umbraco1\Umbraco\
+   Katalog docelowy : D:\mat\programowanie\Projekty Internet\Umbraco1\Umbraco1\App_Data\NuGetBackup\20180306-105735\Umbraco\
+
+              Pliki : *.*
+	    
+              Opcje : *.* /S /E /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	D:\mat\programowanie\Projekty Internet\Umbraco1\Umbraco1\Umbraco\
+
+------------------------------------------------------------------------------
+
+               RazemSkopiowane Pomini©toNiezgodno˜†NIEPOWODZENIE   Dodatki
+Katalogi :         1         0         1         0         0         0
+   Pliki :         0         0         0         0         0         0
+   Bajty :         0         0         0         0         0         0
+ Godziny :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+Zakoäczone : Tue Mar 06 10:57:35 2018
